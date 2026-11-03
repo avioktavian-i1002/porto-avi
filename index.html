@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avi Oktaviani - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Decoration Glows -->
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">AO.</div>
+        <ul class="nav-links">
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#experience">Pengalaman</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#contact" class="btn-contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-badge"><i class="fa-solid fa-sparkles"></i> Fresh Graduate & Tech Enthusiast</div>
+        <h1 class="hero-title">
+            Menggabungkan <span class="highlight-erp">Functional ERP</span> & <span class="highlight-ai">AI Specialist</span>
+        </h1>
+        <p class="hero-subtitle">
+            Lulusan Informatika UPN Veteran Jawa Timur (IPK 3.84). Berpengalaman dalam konfigurasi workflow & sistem enterprise (iDempiere, SAP) serta pemodelan Machine Learning & Data Analytics.
+        </p>
+        <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-folder-open"></i> Lihat Proyek</a>
+            <button id="copyEmailBtn" class="btn btn-secondary">
+                <i class="fa-solid fa-copy"></i> Salin Email
+            </button>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>3.84</h3>
+                <p>IPK Akhir</p>
+            </div>
+            <div class="stat-card">
+                <h3>95%</h3>
+                <p>Akurasi Escalation Workflow SAP</p>
+            </div>
+            <div class="stat-card">
+                <h3>Best Paper</h3>
+                <p>SENATIKA 2025 (XGBoost)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengalaman Magang -->
+    <section id="experience" class="section">
+        <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Pengalaman Kerja & Magang</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <span class="timeline-date">April 2026 - Oktober 2026</span>
+                    <h3>ICT ERP Technical & Functional Intern</h3>
+                    <h4>PT Bisi International Tbk</h4>
+                    <ul>
+                        <li>Mengembangkan dan mengonfigurasi custom window & plugin Java/OSGi di iDempiere untuk otomatisasi kalkulasi bisnis.</li>
+                        <li>Mengintegrasikan mobile apps menggunakan Apache Kafka untuk sinkronisasi data operasional real-time.</li>
+                        <li>Mengelola struktur organisasi dan pengaturan SAP User Role & Authorization di 9 cabang regional.</li>
+                        <li>Mengonfigurasi multi-branch workflow approval di SAP dengan tingkat akurasi eskalasi hingga 95%.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <span class="timeline-date">Agustus 2023 - Oktober 2023</span>
+                    <h3>IT Support & Evaluation Intern</h3>
+                    <h4>Diskominfo Kabupaten Kediri</h4>
+                    <ul>
+                        <li>Melakukan pengujian performa dan pembaruan pada 40+ website domain resmi pemerintah daerah.</li>
+                        <li>Melakukan analisis SPBE Domain 5 (Manajemen Risiko TI) dan menyusun mitigasi risiko.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek Portofolio -->
+    <section id="projects" class="section">
+        <h2 class="section-title"><i class="fa-solid fa-code"></i> Proyek Unggulan</h2>
+        
+        <!-- Filter Category -->
+        <div class="project-filter">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="erp">ERP & Database</button>
+            <button class="filter-btn" data-filter="ai">AI & Machine Learning</button>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card glass-card" data-category="erp">
+                <div class="card-tag erp-tag">ERP & System</div>
+                <h3>iDempiere Multi-Stage Approval Workflow</h3>
+                <p>Merancang 6-stage approval process dengan logika kondisi berbasis kategori anggaran (G02, G07) dan batasan nominal GrandTotal.</p>
+                <div class="tech-stack">
+                    <span>iDempiere</span><span>PostgreSQL</span><span>Java</span><span>Workflow</span>
+                </div>
+            </div>
+
+            <div class="project-card glass-card" data-category="ai">
+                <div class="card-tag ai-tag">AI & Machine Learning</div>
+                <h3>Optimasi XGBoost Grid Search (Gizi Anak)</h3>
+                <p>Pengembangan model machine learning klasifikasi status gizi anak dengan teknik hyperparameter tuning XGBoost. Menang penghargaan Best Paper SENATIKA 2025.</p>
+                <div class="tech-stack">
+                    <span>Python</span><span>XGBoost</span><span>Grid Search</span><span>SMOTE</span>
+                </div>
+            </div>
+
+            <div class="project-card glass-card" data-category="erp">
+                <div class="card-tag erp-tag">Enterprise System</div>
+                <h3>SAP User Role & Authorization Management</h3>
+                <p>Standardisasi data personil dan konfigurasi role-based access control (RBAC) terpusat untuk 9 cabang regional perusahaan.</p>
+                <div class="tech-stack">
+                    <span>SAP</span><span>User Authorization</span><span>Governance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian -->
+    <section id="skills" class="section">
+        <h2 class="section-title"><i class="fa-solid fa-layer-group"></i> Keterampilan Utama</h2>
+        <div class="skills-wrapper glass-card">
+            <div class="skill-group">
+                <h3><i class="fa-solid fa-gears"></i> Enterprise & Database</h3>
+                <div class="pill-container">
+                    <span class="pill">iDempiere</span>
+                    <span class="pill">SAP</span>
+                    <span class="pill">PostgreSQL</span>
+                    <span class="pill">BigQuery</span>
+                    <span class="pill">Workflow Approval</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3><i class="fa-solid fa-brain"></i> AI & Data Science</h3>
+                <div class="pill-container">
+                    <span class="pill">Python</span>
+                    <span class="pill">Machine Learning</span>
+                    <span class="pill">XGBoost</span>
+                    <span class="pill">Hyperparameter Tuning</span>
+                    <span class="pill">Tableau</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Avi Oktaviani. Built with HTML, CSS & JS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
