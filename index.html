@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -55,10 +56,173 @@
             <div class="stat-card">
                 <h3>Best Paper</h3>
                 <p>SENATIKA 2025 (XGBoost)</p>
+=======
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avi Oktaviani - Portfolio & CV</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Swiper CSS (Slider Proyek) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#f0f4f8',
+                            100: '#d9e2ec',
+                            500: '#102a43',
+                            600: '#0b1b2b',
+                            700: '#081420',
+                            800: '#050c15',
+                            900: '#02060a',
+                        },
+                        emerald: {
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 font-sans antialiased transition-colors duration-300">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo / Nama -->
+                <a href="#hero" class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                    Avi<span class="text-emerald-500">Oktaviani</span>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-700 dark:text-slate-300">
+                    <a href="#about" class="hover:text-emerald-500 dark:hover:text-emerald-400 transition">Tentang</a>
+                    <a href="#experience" class="hover:text-emerald-500 dark:hover:text-emerald-400 transition">Pengalaman</a>
+                    <a href="#education" class="hover:text-emerald-500 dark:hover:text-emerald-400 transition">Pendidikan</a>
+                    <a href="#projects" class="hover:text-emerald-500 dark:hover:text-emerald-400 transition">Proyek & Penelitian</a>
+                    <a href="#skills" class="hover:text-emerald-500 dark:hover:text-emerald-400 transition">Keahlian</a>
+                    <a href="#certificates" class="hover:text-emerald-500 dark:hover:text-emerald-400 transition">Sertifikasi</a>
+                    <a href="#contact" class="hover:text-emerald-500 dark:hover:text-emerald-400 transition">Kontak</a>
+                </div>
+
+                <!-- Action Button & Dark Mode Toggle -->
+                <div class="flex items-center gap-3">
+                    <button id="themeToggle" aria-label="Toggle Theme" class="p-2 rounded-full text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white transition bg-slate-200/60 dark:bg-slate-800/60">
+                        <i class="fa-solid fa-moon dark:hidden text-lg"></i>
+                        <i class="fa-solid fa-sun hidden dark:block text-lg"></i>
+                    </button>
+                    <a href="#contact" class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-emerald-600 rounded-xl hover:bg-emerald-500 shadow-sm transition">
+                        Hubungi Saya
+                    </a>
+                    <!-- Mobile Hamburger -->
+                    <button id="mobileMenuBtn" aria-label="Toggle Mobile Menu" class="md:hidden p-2 text-slate-600 dark:text-slate-300">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobileMenu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md">
+            <a href="#about" class="block py-2 text-sm font-medium hover:text-emerald-500">Tentang</a>
+            <a href="#experience" class="block py-2 text-sm font-medium hover:text-emerald-500">Pengalaman</a>
+            <a href="#education" class="block py-2 text-sm font-medium hover:text-emerald-500">Pendidikan</a>
+            <a href="#projects" class="block py-2 text-sm font-medium hover:text-emerald-500">Proyek & Penelitian</a>
+            <a href="#skills" class="block py-2 text-sm font-medium hover:text-emerald-500">Keahlian</a>
+            <a href="#certificates" class="block py-2 text-sm font-medium hover:text-emerald-500">Sertifikasi</a>
+            <a href="#contact" class="block py-2 text-sm font-medium hover:text-emerald-500">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO / HEADER WITH PHOTO PROFILE -->
+    <section id="hero" class="min-h-screen flex items-center justify-center pt-28 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            
+            <!-- PHOTO PROFILE SPACE -->
+            <div class="relative w-36 h-36 sm:w-44 sm:h-44 mx-auto mb-6">
+                <!-- Outer Glow Ring -->
+                <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-full blur opacity-70 animate-pulse"></div>
+                <!-- Profile Image Container -->
+                <div class="relative w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-slate-900 shadow-xl bg-slate-200 dark:bg-slate-800 flex items-center justify-center">
+                    <!-- Ganti 'profile.jpg' dengan file foto Anda -->
+                    <img src="img/profile.jpeg" alt="Avi Oktaviani" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <!-- Placeholder Icon jika foto belum diisi -->
+                    <div class="hidden w-full h-full items-center justify-center text-slate-400 dark:text-slate-500">
+                        <i class="fa-solid fa-user text-5xl"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Best Paper Badge Banner -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 mb-6 text-xs sm:text-sm font-semibold text-emerald-700 bg-emerald-100/80 dark:bg-emerald-950/70 dark:text-emerald-300 rounded-full border border-emerald-300 dark:border-emerald-800">
+                <i class="fa-solid fa-trophy text-amber-500"></i> Best Paper Awardee SENATIKA-V 2025
+            </div>
+
+            <!-- Header Title -->
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
+                Avi <span class="gradient-text">Oktaviani</span>, S.Kom.
+            </h1>
+            <p class="text-lg sm:text-2xl font-medium text-slate-700 dark:text-slate-300 mb-6">
+                Machine Learning, Data Analysis & ERP Specialist (iDempiere & SAP)
+            </p>
+            <p class="max-w-3xl mx-auto text-slate-600 dark:text-slate-400 text-base sm:text-lg mb-8 leading-relaxed">
+                Lulusan Sarjana Ilmu Komputer UPN "Veteran" Jawa Timur (<span class="font-semibold text-slate-900 dark:text-white">IPK 3.84/4.00</span>). Memiliki pengalaman praktis dalam <span class="text-slate-900 dark:text-white font-medium">ERP Technical & Functional</span> (iDempiere Customization, JAVA OSGi, PostgreSQL, Apache Kafka) serta administrasi fungsional <span class="text-slate-900 dark:text-white font-medium">SAP</span>. Berpengalaman merancang model Machine Learning, Data Analytics, dan deployment sistem.
+            </p>
+
+            <!-- Contact Details Grid Banner -->
+            <div class="flex flex-wrap items-center justify-center gap-4 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 mb-8">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-emerald-500"></i> Kediri, Jawa Timur</span>
+                <span class="hidden sm:inline">•</span>
+                <a href="mailto:avioktaviani1002@gmail.com" class="flex items-center gap-1.5 hover:text-emerald-500 transition"><i class="fa-solid fa-envelope text-emerald-500"></i> avioktaviani1002@gmail.com</a>
+                <span class="hidden sm:inline">•</span>
+                <a href="https://wa.me/6282244670526" target="_blank" class="flex items-center gap-1.5 hover:text-emerald-500 transition"><i class="fa-solid fa-phone text-emerald-500"></i> +62 822-4467-0526</a>
+            </div>
+
+            <!-- CTAs -->
+            <div class="flex flex-wrap items-center justify-center gap-4 mb-10">
+                <a href="#contact" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-base shadow-lg shadow-emerald-600/20 transition">
+                    <i class="fa-solid fa-paper-plane mr-2"></i> Hubungi Saya
+                </a>
+                <a href="https://linkedin.com/in/aviokta1410" target="_blank" class="px-6 py-3 rounded-xl border border-slate-300 dark:border-slate-700 font-semibold text-base hover:bg-slate-100 dark:hover:bg-slate-900 transition">
+                    <i class="fa-brands fa-linkedin text-emerald-500 mr-2"></i> LinkedIn
+                </a>
+            </div>
+
+            <!-- Social Media Buttons -->
+            <div class="flex justify-center items-center gap-5">
+                <a href="https://linkedin.com/in/aviokta1410" target="_blank" aria-label="LinkedIn Profile" class="w-11 h-11 rounded-xl bg-slate-200 dark:bg-slate-900 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-emerald-600 hover:text-white dark:hover:bg-emerald-600 transition">
+                    <i class="fa-brands fa-linkedin-in text-lg"></i>
+                </a>
+                <a href="https://github.com/avioktaviani" target="_blank" aria-label="GitHub Profile" class="w-11 h-11 rounded-xl bg-slate-200 dark:bg-slate-900 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-emerald-600 hover:text-white dark:hover:bg-emerald-600 transition">
+                    <i class="fa-brands fa-github text-lg"></i>
+                </a>
+                <a href="mailto:avioktaviani1002@gmail.com" aria-label="Send Email" class="w-11 h-11 rounded-xl bg-slate-200 dark:bg-slate-900 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-emerald-600 hover:text-white dark:hover:bg-emerald-600 transition">
+                    <i class="fa-solid fa-envelope text-lg"></i>
+                </a>
+>>>>>>> 327efae (update)
             </div>
         </div>
     </section>
 
+<<<<<<< HEAD
     <!-- Pengalaman Magang -->
     <section id="experience" class="section">
         <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Pengalaman Kerja & Magang</h2>
@@ -86,12 +250,173 @@
                     <ul>
                         <li>Melakukan pengujian performa dan pembaruan pada 40+ website domain resmi pemerintah daerah.</li>
                         <li>Melakukan analisis SPBE Domain 5 (Manajemen Risiko TI) dan menyusun mitigasi risiko.</li>
+=======
+    <!-- SECTION 2: TENTANG SAYA -->
+    <section id="about" class="py-20 bg-slate-100/70 dark:bg-slate-900/40">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Tentang Saya</h2>
+                <div class="w-16 h-1 bg-emerald-500 mx-auto mt-2 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+                <div class="md:col-span-2 glass-card p-8 rounded-2xl shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Ringkasan Profil</h3>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                            Saya adalah Lulusan Sarjana Ilmu Komputer UPN "Veteran" Jawa Timur dengan IPK 3.84/4.00. Memiliki passion mendalam di bidang <span class="font-semibold text-slate-800 dark:text-slate-100">Machine Learning, Analisis Data, dan Enterprise Resource Planning (ERP)</span>.
+                        </p>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                            Pengalaman magang praktis mencakup perancangan modul kustom ERP iDempiere (JAVA, PostgreSQL, Apache Kafka) di PT BISI International Tbk, administrasi SAP 9 cabang, evaluasi SPBE Manajemen Risiko TI di Diskominfo Kediri, serta program intensif Machine Learning Bangkit Academy (by Google, GoTo, Traveloka).
+                        </p>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Penelitian tugas akhir saya berfokus pada optimasi Machine Learning XGBoost untuk klasifikasi gizi balita yang berhasil meraih penghargaan <span class="font-semibold text-emerald-600 dark:text-emerald-400">Best Paper pada SENATIKA-V 2025 Pekanbaru</span>.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="space-y-4 flex flex-col justify-between">
+                    <div class="glass-card p-5 rounded-2xl flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 flex items-center justify-center text-emerald-600 dark:text-emerald-400 text-xl shrink-0">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 uppercase font-semibold">Pendidikan</p>
+                            <p class="font-bold text-slate-800 dark:text-slate-200 text-sm">S1 Ilmu Komputer</p>
+                            <p class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold">IPK 3.84 / 4.00</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-2xl flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 flex items-center justify-center text-emerald-600 dark:text-emerald-400 text-xl shrink-0">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 uppercase font-semibold">Fokus Utama</p>
+                            <p class="font-bold text-slate-800 dark:text-slate-200 text-sm">Machine Learning & ERP</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-2xl flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 flex items-center justify-center text-emerald-600 dark:text-emerald-400 text-xl shrink-0">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 uppercase font-semibold">Prestasi Terkini</p>
+                            <p class="font-bold text-slate-800 dark:text-slate-200 text-sm">Best Paper SENATIKA-V 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: PENGALAMAN WORK / INTERNSHIP -->
+    <section id="experience" class="py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Pengalaman Kerja & Magang</h2>
+                <div class="w-16 h-1 bg-emerald-500 mx-auto mt-2 rounded-full"></div>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Pengalaman 1: PT BISI International Tbk -->
+                <div class="glass-card p-6 sm:p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4 border-b border-slate-200 dark:border-slate-800 pb-4">
+                        <div>
+                            <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300">ERP Technical & Functional</span>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-1">PT BISI International Tbk</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm">ICT ERP Technical & Functional Intern • Pare, Kediri</p>
+                        </div>
+                        <span class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 w-max">
+                            Jun 2026 - Nov 2026
+                        </span>
+                    </div>
+                    <ul class="space-y-2.5 text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0 text-sm"></i>
+                            <span>Mengembangkan dan mengonfigurasi custom window iDempiere untuk kebutuhan tim RnD PT BISI dan berhasil <strong class="text-slate-900 dark:text-white">meningkatkan efisiensi waktu entri data 30% - 40%</strong>.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0 text-sm"></i>
+                            <span>Development komponen plugin kustom menggunakan <strong class="text-slate-900 dark:text-white">JAVA OSGi</strong> untuk otomatisasi kalkulasi nilai bisnis & tanggal planning, meminimalisir risiko human error hingga 90%.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0 text-sm"></i>
+                            <span>Integrasi mobile apps menggunakan <strong class="text-slate-900 dark:text-white">Apache Kafka</strong> untuk memastikan sinkronisasi data operasional secara realtime & asynchronous serta menjaga stabilitas server iDempiere.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0 text-sm"></i>
+                            <span>Merancang report view database dan tabel laporan dengan <strong class="text-slate-900 dark:text-white">PostgreSQL</strong> untuk meningkatkan query response time sebesar 30% - 40%.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0 text-sm"></i>
+                            <span>Mengelola struktur organisasi departemen melalui sistem <strong class="text-slate-900 dark:text-white">SAP</strong> dan merancang workflow approval SAP di 9 cabang dengan akurasi jalur eskalasi hingga 95%.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pengalaman 2: Diskominfo Kediri -->
+                <div class="glass-card p-6 sm:p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4 border-b border-slate-200 dark:border-slate-800 pb-4">
+                        <div>
+                            <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300">IT Governance & Support</span>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-1">Dinas Komunikasi dan Informatika Kabupaten Kediri</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm">IT Support Intern • Kediri, Indonesia</p>
+                        </div>
+                        <span class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 w-max">
+                            Agu 2023 - Okt 2023
+                        </span>
+                    </div>
+                    <ul class="space-y-2.5 text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0 text-sm"></i>
+                            <span>Melakukan evaluasi dan pengujian pada website resmi Pemerintah Kabupaten Kediri sesuai standar SPBE untuk memastikan keamanan & performa sistem.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0 text-sm"></i>
+                            <span>Melakukan analisis <strong class="text-slate-900 dark:text-white">SPBE Domain 5 (Manajemen Risiko)</strong> dan identifikasi ~10 potensi risiko TI, menganalisis dampak, serta menyusun rekomendasi mitigasi risiko untuk pengelolaan sistem informasi Pemda.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0 text-sm"></i>
+                            <span>Menyusun laporan hasil analisis dan evaluasi SPBE untuk kebutuhan penilaian internal pemerintah daerah.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pengalaman 3: Bangkit Academy -->
+                <div class="glass-card p-6 sm:p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4 border-b border-slate-200 dark:border-slate-800 pb-4">
+                        <div>
+                            <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300">Machine Learning Path</span>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-1">Bangkit Academy 2023 Batch 2</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm">Machine Learning Cohort (Google, GoTo, Traveloka) • Online</p>
+                        </div>
+                        <span class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 w-max">
+                            Agu 2023 - Des 2023
+                        </span>
+                    </div>
+                    <ul class="space-y-2.5 text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0 text-sm"></i>
+                            <span>Mengembangkan model machine learning rekomendasi jenis tanaman berdasarkan kondisi cuaca (suhu, kelembapan, curah hujan) serta menerapkan clustering <strong class="text-slate-900 dark:text-white">K-Means</strong> pada capstone project aplikasi "Cuaca Tani".</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0 text-sm"></i>
+                            <span>Melakukan pengolahan data, membangun model prediksi berbasis statistik dan Machine Learning, serta menginterpretasikan hasil analisis data.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0 text-sm"></i>
+                            <span>Melakukan deployment model ke aplikasi sehingga dapat digunakan untuk proses prediksi langsung secara realtime.</span>
+                        </li>
+>>>>>>> 327efae (update)
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+<<<<<<< HEAD
     <!-- Proyek Portofolio -->
     <section id="projects" class="section">
         <h2 class="section-title"><i class="fa-solid fa-code"></i> Proyek Unggulan</h2>
@@ -128,11 +453,88 @@
                 <p>Standardisasi data personil dan konfigurasi role-based access control (RBAC) terpusat untuk 9 cabang regional perusahaan.</p>
                 <div class="tech-stack">
                     <span>SAP</span><span>User Authorization</span><span>Governance</span>
+=======
+    <!-- SECTION 4: PENDIDIKAN & ORGANISASI -->
+    <section id="education" class="py-20 bg-slate-100/70 dark:bg-slate-900/40">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Pendidikan & Kepemimpinan</h2>
+                <div class="w-16 h-1 bg-emerald-500 mx-auto mt-2 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Education Card -->
+                <div class="glass-card p-6 sm:p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
+                                <i class="fa-solid fa-graduation-cap text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white">Pendidikan Formal</h3>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">Bachelor Degree</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-slate-200 dark:border-slate-800 pt-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <h4 class="font-bold text-slate-900 dark:text-white text-base">UPN "Veteran" Jawa Timur</h4>
+                                <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/80 px-2 py-0.5 rounded">IPK 3.84 / 4.00</span>
+                            </div>
+                            <p class="text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">Bachelor of Computer Science (S.Kom) • Agu 2021 - Jan 2026</p>
+                            
+                            <div class="mt-4 p-4 rounded-xl bg-slate-200/50 dark:bg-slate-900/60 text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-2">
+                                <p><strong class="text-slate-800 dark:text-slate-200">Tugas Akhir:</strong> Klasifikasi status gizi anak berbasis Machine Learning XGBoost dengan tuning Grid Search & Random Search (Akurasi Model: <strong class="text-emerald-600 dark:text-emerald-400">89%</strong>).</p>
+                                <p><strong class="text-slate-800 dark:text-slate-200">Proyek Akademik:</strong> Diagnosis ISPA berbasis CBR (Minkowski Distance), Reduksi Dimensi Citra Daun Apel berbasis PCA mandiri, & K-Means Cuaca Pertanian.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organization Card -->
+                <div class="glass-card p-6 sm:p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
+                                <i class="fa-solid fa-users text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white">Pengalaman Organisasi</h3>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">Leadership & Kepanitiaan</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-5 border-t border-slate-200 dark:border-slate-800 pt-4">
+                            <div>
+                                <div class="flex justify-between items-center mb-1">
+                                    <h4 class="font-bold text-slate-900 dark:text-white text-sm">Mobile Developer Community UPN "Veteran" Jatim</h4>
+                                    <span class="text-xs text-slate-500">2023 - 2025</span>
+                                </div>
+                                <p class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 mb-1">Bendahara Komunitas</p>
+                                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    Mengelola anggaran tahunan komunitas, menyusun dokumen keuangan untuk pelaporan universitas, serta mencatat transaksi keuangan secara transparan.
+                                </p>
+                            </div>
+
+                            <div class="border-t border-slate-200/60 dark:border-slate-800/60 pt-3">
+                                <div class="flex justify-between items-center mb-1">
+                                    <h4 class="font-bold text-slate-900 dark:text-white text-sm">Lokakarya "Bootcamp Internet of Things" 2022</h4>
+                                    <span class="text-xs text-slate-500">Nov 2022</span>
+                                </div>
+                                <p class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 mb-1">Divisi Acara (Master of Ceremony / MC)</p>
+                                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    Diadakan BEM Fasilkom UPN. Memandu jalannya acara harian, mengelola rundown, tenggat waktu, dan koordinasi manajemen peserta.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+>>>>>>> 327efae (update)
                 </div>
             </div>
         </div>
     </section>
 
+<<<<<<< HEAD
     <!-- Keahlian -->
     <section id="skills" class="section">
         <h2 class="section-title"><i class="fa-solid fa-layer-group"></i> Keterampilan Utama</h2>
@@ -155,16 +557,406 @@
                     <span class="pill">XGBoost</span>
                     <span class="pill">Hyperparameter Tuning</span>
                     <span class="pill">Tableau</span>
+=======
+    <!-- SECTION 5: PROYEK & PENELITIAN (WITH IMAGE SLIDERS & STATIC SAP) -->
+    <section id="projects" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Proyek & Penelitian Highlight</h2>
+                <div class="w-16 h-1 bg-emerald-500 mx-auto mt-2 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Proyek 1: Paper SENATIKA-V (Slide Foto) -->
+                <div class="glass-card rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col justify-between border-2 border-emerald-500/30">
+                    <div>
+                        <!-- Image Carousel Slider -->
+                        <div class="swiper projectSwiper w-full h-48 bg-slate-800">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/tampilan awal.png" alt="Slide 1" class="w-full h-full object-cover"></div>
+                                <div class="swiper-slide"><img src="img/berhasil mendeteksi status gizi.png" alt="Slide 2" class="w-full h-full object-cover"></div>
+                                <div class="swiper-slide"><img src="img/deteksi gizi balita jika nilai yg dimasukkan diluar rentang.png" alt="Slide 3" class="w-full h-full object-cover"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div class="p-6 space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="bg-amber-400 text-slate-900 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase">Best Paper</span>
+                                <span class="text-xs text-slate-500">SENATIKA-V 2025</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 dark:text-white leading-snug">Optimasi XGBoost Status Gizi Balita</h3>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                                Penelitian optimasi model XGBoost menggunakan hyperparameter Grid Search & Random Search untuk klasifikasi status gizi anak dengan akurasi <strong class="text-emerald-600 dark:text-emerald-400">89%</strong>.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-200 dark:border-slate-800">
+                                <span class="text-xs px-2.5 py-1 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-md font-medium">Python</span>
+                                <span class="text-xs px-2.5 py-1 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-md font-medium">XGBoost</span>
+                                <span class="text-xs px-2.5 py-1 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-md font-medium">GridSearch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 2: iDempiere ERP (Slide Foto) -->
+                <div class="glass-card rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <!-- Image Carousel Slider -->
+                        <div class="swiper projectSwiper w-full h-48 bg-slate-800">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=600&q=80" alt="Slide 1" class="w-full h-full object-cover"></div>
+                                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Slide 2" class="w-full h-full object-cover"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div class="p-6 space-y-3">
+                            <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">PT BISI International Tbk</span>
+                            <h3 class="text-lg font-bold text-slate-900 dark:text-white leading-snug">Custom ERP iDempiere & Kafka</h3>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                                Pengembangan custom window, plugin JAVA OSGi, serta integrasi Apache Kafka & PostgreSQL untuk sinkronisasi data realtime dan otomatisasi kalkulasi bisnis.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-200 dark:border-slate-800">
+                                <span class="text-xs px-2.5 py-1 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-md font-medium">JAVA OSGi</span>
+                                <span class="text-xs px-2.5 py-1 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-md font-medium">PostgreSQL</span>
+                                <span class="text-xs px-2.5 py-1 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-md font-medium">Apache Kafka</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 3: Cuaca Tani (Slide Foto) -->
+                <div class="glass-card rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <!-- Image Carousel Slider -->
+                        <div class="swiper projectSwiper w-full h-48 bg-slate-800">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80" alt="Slide 1" class="w-full h-full object-cover"></div>
+                                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=600&q=80" alt="Slide 2" class="w-full h-full object-cover"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div class="p-6 space-y-3">
+                            <span class="text-xs font-semibold text-blue-600 dark:text-blue-400">Bangkit Capstone</span>
+                            <h3 class="text-lg font-bold text-slate-900 dark:text-white leading-snug">Aplikasi "Cuaca Tani" ML</h3>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                                Rekomendasi jenis tanaman berbasis prediksi cuaca (suhu, kelembapan, curah hujan) menggunakan algoritma K-Means Clustering & deployment model ke sistem mobile.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-200 dark:border-slate-800">
+                                <span class="text-xs px-2.5 py-1 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-md font-medium">K-Means</span>
+                                <span class="text-xs px-2.5 py-1 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-md font-medium">Python</span>
+                                <span class="text-xs px-2.5 py-1 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-md font-medium">Deployment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 4: Diagnosis ISPA CBR (Slide Foto) -->
+                <div class="glass-card rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <!-- Image Carousel Slider -->
+                        <div class="swiper projectSwiper w-full h-48 bg-slate-800">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80" alt="Slide 1" class="w-full h-full object-cover"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div class="p-6 space-y-3">
+                            <span class="text-xs font-semibold text-teal-600 dark:text-teal-400">Proyek Akademik AI</span>
+                            <h3 class="text-lg font-bold text-slate-900 dark:text-white leading-snug">Sistem Diagnosis ISPA (CBR)</h3>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                                Sistem pakar mendiagnosis Infeksi Saluran Pernapasan Akut (ISPA) dengan pendekatan Case-Based Reasoning (CBR) menggunakan perhitungan Minkowski Distance.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-200 dark:border-slate-800">
+                                <span class="text-xs px-2.5 py-1 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-md font-medium">CBR</span>
+                                <span class="text-xs px-2.5 py-1 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-md font-medium">Minkowski Distance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 5: PCA Reduksi Dimensi (Slide Foto) -->
+                <div class="glass-card rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <!-- Image Carousel Slider -->
+                        <div class="swiper projectSwiper w-full h-48 bg-slate-800">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Slide 1" class="w-full h-full object-cover"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div class="p-6 space-y-3">
+                            <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">Pattern Recognition</span>
+                            <h3 class="text-lg font-bold text-slate-900 dark:text-white leading-snug">PCA Reduksi Dimensi Citra Daun</h3>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                                Implementasi algoritma Principal Component Analysis (PCA) secara mandiri untuk reduksi dimensi fitur data citra serta pengenalan pola penyakit daun apel.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-200 dark:border-slate-800">
+                                <span class="text-xs px-2.5 py-1 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-md font-medium">PCA</span>
+                                <span class="text-xs px-2.5 py-1 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-md font-medium">Image Processing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 6: SAP Approval & Mapping (TANPA SLIDER FOTO - STATIS) -->
+                <div class="glass-card rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <div class="bg-gradient-to-r from-slate-700 to-slate-900 p-6 text-white">
+                            <i class="fa-solid fa-sitemap text-3xl mb-3 text-blue-400"></i>
+                            <h3 class="text-lg font-bold leading-snug">SAP Workflow & Department Structure</h3>
+                            <p class="text-xs text-slate-300 mt-1">Enterprise Architecture Management</p>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                                Pengelolaan struktur organisasi departemen dan merancang workflow approval transaksi SAP di 9 cabang operasional perusahaan hingga tingkat division head.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-200 dark:border-slate-800">
+                                <span class="text-xs px-2.5 py-1 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-md font-medium">SAP Administration</span>
+                                <span class="text-xs px-2.5 py-1 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-md font-medium">Workflow Approval</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: KEAHLIAN / SKILLS -->
+    <section id="skills" class="py-20 bg-slate-100/70 dark:bg-slate-900/40">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Keahlian & Kemampuan</h2>
+                <div class="w-16 h-1 bg-emerald-500 mx-auto mt-2 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Hard Skills -->
+                <div class="glass-card p-6 sm:p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-code text-emerald-500"></i> Hard Skills & Technologies
+                    </h3>
+                    <div class="flex flex-wrap gap-2.5">
+                        <span class="px-3.5 py-2 bg-emerald-100/80 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 font-semibold text-sm rounded-xl border border-emerald-300 dark:border-emerald-800">Python</span>
+                        <span class="px-3.5 py-2 bg-emerald-100/80 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 font-semibold text-sm rounded-xl border border-emerald-300 dark:border-emerald-800">Machine Learning</span>
+                        <span class="px-3.5 py-2 bg-emerald-100/80 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 font-semibold text-sm rounded-xl border border-emerald-300 dark:border-emerald-800">PostgreSQL</span>
+                        <span class="px-3.5 py-2 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-sm rounded-xl">iDempiere Customization</span>
+                        <span class="px-3.5 py-2 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-sm rounded-xl">iDempiere Plugin (JAVA OSGi)</span>
+                        <span class="px-3.5 py-2 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-sm rounded-xl">SAP Administration</span>
+                        <span class="px-3.5 py-2 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-sm rounded-xl">SAP Business Workflow</span>
+                        <span class="px-3.5 py-2 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-sm rounded-xl">Data Analysis</span>
+                        <span class="px-3.5 py-2 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-sm rounded-xl">Apache Kafka</span>
+                        <span class="px-3.5 py-2 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-sm rounded-xl">Java</span>
+                        <span class="px-3.5 py-2 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-sm rounded-xl">Statistical Analysis</span>
+                        <span class="px-3.5 py-2 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-sm rounded-xl">Data Integration</span>
+                        <span class="px-3.5 py-2 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-sm rounded-xl">Metadata Management</span>
+                        <span class="px-3.5 py-2 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-sm rounded-xl">JavaScript</span>
+                        <span class="px-3.5 py-2 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-sm rounded-xl">PHP</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="glass-card p-6 sm:p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-lightbulb text-emerald-500"></i> Soft Skills & Karakter
+                        </h3>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="p-3 bg-slate-200/50 dark:bg-slate-800/50 rounded-xl text-center font-medium text-sm text-slate-800 dark:text-slate-200">Pemecahan Masalah</div>
+                            <div class="p-3 bg-slate-200/50 dark:bg-slate-800/50 rounded-xl text-center font-medium text-sm text-slate-800 dark:text-slate-200">Manajemen Waktu</div>
+                            <div class="p-3 bg-slate-200/50 dark:bg-slate-800/50 rounded-xl text-center font-medium text-sm text-slate-800 dark:text-slate-200">Berpikir Kritis</div>
+                            <div class="p-3 bg-slate-200/50 dark:bg-slate-800/50 rounded-xl text-center font-medium text-sm text-slate-800 dark:text-slate-200">Adaptabilitas</div>
+                            <div class="p-3 bg-slate-200/50 dark:bg-slate-800/50 rounded-xl text-center font-medium text-sm text-slate-800 dark:text-slate-200">Manajemen Proyek</div>
+                            <div class="p-3 bg-slate-200/50 dark:bg-slate-800/50 rounded-xl text-center font-medium text-sm text-slate-800 dark:text-slate-200">Komunikasi Efektif</div>
+                        </div>
+
+                        <div class="mt-6 p-4 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 rounded-xl text-center text-xs font-semibold text-emerald-700 dark:text-emerald-300">
+                            <i class="fa-solid fa-seedling mr-1"></i> Growth Mindset & Continuous Learning
+                        </div>
+                    </div>
+>>>>>>> 327efae (update)
                 </div>
             </div>
         </div>
     </section>
 
+<<<<<<< HEAD
     <!-- Footer -->
     <footer>
         <p>&copy; 2026 Avi Oktaviani. Built with HTML, CSS & JS.</p>
     </footer>
 
+=======
+    <!-- SECTION 7: SERTIFIKASI & PRESTASI -->
+    <section id="certificates" class="py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Sertifikasi & Prestasi</h2>
+                <div class="w-16 h-1 bg-emerald-500 mx-auto mt-2 rounded-full"></div>
+            </div>
+
+            <div class="glass-card p-6 sm:p-8 rounded-2xl mb-8 border-2 border-amber-400 dark:border-amber-500/40 relative overflow-hidden">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-100 dark:bg-amber-950 flex items-center justify-center text-amber-500 text-3xl shrink-0">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400">Penghargaan Prestasi (2025)</span>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Best Paper SENATIKA-V Pekanbaru</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
+                                "Tuning Hyperparameter Grid Search untuk Optimasi XGBoost pada Klasifikasi Status Gizi Balita" (Information System and Technology).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+                    <div class="p-3.5 bg-emerald-100 dark:bg-emerald-950/60 rounded-xl text-emerald-600 dark:text-emerald-400 text-2xl shrink-0">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">BNSP - Junior Web Programmer Certification</h3>
+                        <p class="text-sm font-medium text-emerald-600 dark:text-emerald-400">BNSP Indonesia</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Tahun Terbit: 2025</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+                    <div class="p-3.5 bg-emerald-100 dark:bg-emerald-950/60 rounded-xl text-emerald-600 dark:text-emerald-400 text-2xl shrink-0">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">TensorFlow Developer Certification</h3>
+                        <p class="text-sm font-medium text-emerald-600 dark:text-emerald-400">TensorFlow / Google</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Tahun Terbit: 2024</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+                    <div class="p-3.5 bg-emerald-100 dark:bg-emerald-950/60 rounded-xl text-emerald-600 dark:text-emerald-400 text-2xl shrink-0">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Machine Learning Specialization</h3>
+                        <p class="text-sm font-medium text-emerald-600 dark:text-emerald-400">DeepLearning.AI / Standford & Google</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Tahun Terbit: 2023</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+                    <div class="p-3.5 bg-emerald-100 dark:bg-emerald-950/60 rounded-xl text-emerald-600 dark:text-emerald-400 text-2xl shrink-0">
+                        <i class="fa-solid fa-square-root-variable"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Mathematics for Machine Learning & Data Science</h3>
+                        <p class="text-sm font-medium text-emerald-600 dark:text-emerald-400">DeepLearning.AI / Google</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Tahun Terbit: 2023</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl flex items-start gap-4 md:col-span-2">
+                    <div class="p-3.5 bg-emerald-100 dark:bg-emerald-950/60 rounded-xl text-emerald-600 dark:text-emerald-400 text-2xl shrink-0">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Bangkit Academy Machine Learning Graduate</h3>
+                        <p class="text-sm font-medium text-emerald-600 dark:text-emerald-400">Google, GoTo, Traveloka & Dicoding Indonesia</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Tahun Terbit: 2023 (Batch 2)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: KONTAK & FOOTER -->
+    <section id="contact" class="py-20 bg-slate-100/70 dark:bg-slate-900/40">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Hubungi Saya</h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Mari berdiskusi mengenai peluang kerja, proyek Machine Learning, atau implementasi ERP.</p>
+                <div class="w-16 h-1 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Email Card -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 font-semibold uppercase">Email Direct</p>
+                            <h3 class="font-bold text-slate-900 dark:text-white text-base">Email Saya</h3>
+                        </div>
+                    </div>
+                    <a href="mailto:avioktaviani1002@gmail.com" class="text-sm font-semibold text-emerald-600 dark:text-emerald-400 hover:underline break-all">
+                        avioktaviani1002@gmail.com
+                    </a>
+                </div>
+
+
+                <!-- LinkedIn Card -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 font-semibold uppercase">LinkedIn</p>
+                            <h3 class="font-bold text-slate-900 dark:text-white text-base">Profil Profesional</h3>
+                        </div>
+                    </div>
+                    <a href="https://linkedin.com/in/aviokta1410" target="_blank" class="text-sm font-semibold text-emerald-600 dark:text-emerald-400 hover:underline break-all">
+                        linkedin.com/in/aviokta1410
+                    </a>
+                </div>
+
+                <!-- GitHub Card -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 font-semibold uppercase">GitHub</p>
+                            <h3 class="font-bold text-slate-900 dark:text-white text-base">Repository Kode</h3>
+                        </div>
+                    </div>
+                    <a href="https://github.com/avioktaviani" target="_blank" class="text-sm font-semibold text-emerald-600 dark:text-emerald-400 hover:underline break-all">
+                        github.com/avioktaviani
+                    </a>
+                </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500 dark:text-slate-400">
+        <p>© <span id="year"></span> Avi Oktaviani, S.Kom. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <!-- Swiper JS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom Script -->
+>>>>>>> 327efae (update)
     <script src="script.js"></script>
 </body>
 </html>
